@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Автомобилист — автосервис и автомобили в наличии</title>
+<meta name="description" content="Автосервис полного цикла и витрина привезённых автомобилей. Диагностика за 30 минут, ремонт, привоз под заказ. Машины в наличии — проверены по 120+ пунктам.">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Crect width='32' height='32' rx='6' fill='%23131518'/%3E%3Cpath d='M7 21h18M9 21l2.5-7h9L23 21M13 14v-3h6v3' stroke='%23CE7F3D' stroke-width='2' fill='none' stroke-linecap='round' stroke-linejoin='round'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Manrope:wght@400;500;600;700;800&family=IBM+Plex+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header" id="siteHeader">
+  <div class="container header-inner">
+    <a class="logo" href="#/" aria-label="Автомобилист — на главную">
+      <span class="logo-mark" aria-hidden="true"></span>
+      <span class="logo-text">АВТОМОБИЛИСТ</span>
+    </a>
+    <nav class="main-nav" aria-label="Основная навигация">
+      <a href="#services">Услуги</a>
+      <a href="#catalog">Автомобили</a>
+      <a href="#about">О нас</a>
+      <a href="#contacts">Контакты</a>
+    </nav>
+    <a class="header-phone" href="tel:+79221554015">+7 922 155-40-15</a>
+    <button class="nav-toggle" id="navToggle" aria-label="Открыть меню" aria-expanded="false" aria-controls="mobileNav">
+      <span></span><span></span>
+    </button>
+  </div>
+  <nav class="mobile-nav" id="mobileNav" aria-label="Мобильная навигация">
+    <a href="#services">Услуги</a>
+    <a href="#catalog">Автомобили</a>
+    <a href="#about">О нас</a>
+    <a href="#contacts">Контакты</a>
+    <a href="tel:+79221554015" class="mobile-nav-phone">+7 922 155-40-15</a>
+  </nav>
+</header>
+
+<main id="app">
+
+  <!-- ===================== HOME VIEW ===================== -->
+  <div id="view-home">
+
+    <section class="hero" id="hero">
+      <div class="hero-bg" role="img" aria-label="Автомобиль на подъёмнике в сервисной зоне"></div>
+      <div class="hero-overlay"></div>
+      <div class="container hero-content">
+        <p class="hero-eyebrow reveal">Автосервис · Авто из-за рубежа · Витрина в наличии</p>
+        <h1 class="hero-title reveal">Сервис и автомобили,<br>которым доверяют</h1>
+        <p class="hero-sub reveal">Диагностика и ремонт без навязанных работ. Привоз автомобилей под заказ и машины в наличии — каждая проверена по 120+ пунктов до того, как попала на витрину.</p>
+        <div class="hero-actions reveal">
+          <a class="btn btn-primary" href="#catalog">Смотреть автомобили в наличии</a>
+        </div>
+      </div>
+      <div class="hero-scroll" aria-hidden="true"><span></span></div>
+    </section>
+
+    <section class="facts-strip" aria-label="Направления работы">
+      <div class="container facts-inner">
+        <div class="fact reveal"><span class="fact-num">01</span><span class="fact-name">Диагностика</span></div>
+        <div class="fact reveal"><span class="fact-num">02</span><span class="fact-name">Ремонт и ТО</span></div>
+        <div class="fact reveal"><span class="fact-num">03</span><span class="fact-name">Привоз под заказ</span></div>
+        <div class="fact reveal"><span class="fact-num">04</span><span class="fact-name">Авто в наличии</span></div>
+      </div>
+    </section>
+
+    <section class="section services" id="services">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Что мы делаем</h2>
+          <p class="section-note">Пять направлений — одна логика: сначала проверка, потом решения.</p>
+        </div>
+        <ul class="service-list">
+          <li class="service-row reveal">
+            <span class="service-idx">01</span>
+            <div class="service-body">
+              <h3>Диагностика</h3>
+              <p>Компьютерная и инструментальная проверка всех систем за 30 минут. Отчёт без «страшилок» — только то, что реально требует внимания.</p>
+            </div>
+          </li>
+          <li class="service-row reveal">
+            <span class="service-idx">02</span>
+            <div class="service-body">
+              <h3>Техническое обслуживание</h3>
+              <p>Масло, фильтры, тормоза и свечи строго по регламенту производителя, с фиксацией замен в сервисной книжке.</p>
+            </div>
+          </li>
+          <li class="service-row reveal">
+            <span class="service-idx">03</span>
+            <div class="service-body">
+              <h3>Ремонт</h3>
+              <p>Ходовая, двигатели, электрика. Смета согласуется до начала работ и не меняется в процессе.</p>
+            </div>
+          </li>
+          <li class="service-row reveal">
+            <span class="service-idx">04</span>
+            <div class="service-body">
+              <h3>Привоз автомобилей под заказ</h3>
+              <p>Подбираем, проверяем историю и состояние, привозим из Кореи, Китая, Японии и Европы под ключ — до постановки на учёт.</p>
+            </div>
+          </li>
+          <li class="service-row reveal">
+            <span class="service-idx">05</span>
+            <div class="service-body">
+              <h3>Автомобили в наличии</h3>
+              <p>Машины, которые уже привезены, растаможены и подготовлены. Приезжайте смотреть — каждая стоит на витрине с полным пакетом документов.</p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section about" id="about">
+      <div class="container about-grid">
+        <div class="about-text reveal">
+          <h2 class="section-title">Подход, а не обещания</h2>
+          <p>Мы начинали в 2015 году с двух подъёмников и одного сканера. С тех пор принцип не менялся: ничего не рекомендуем, что не готовы показать и объяснить. Каждый автомобиль на витрине проходит проверку по 120+ пунктам — юридическая чистота, агрегаты, кузов толщиномером, — и только после этого получает статус «в наличии».</p>
+          <p class="about-quote">«Привёл машину на диагностику перед покупкой у них же. Нашли скрученный пробег, которого не видели два других сервиса. Купил у «Автомобилиста» Camry из наличия — два года без единого вопроса.»<span class="quote-author">— Дмитрий, владелец Toyota Camry</span></p>
+        </div>
+        <dl class="about-stats">
+          <div class="stat reveal"><dt>Работаем</dt><dd><span class="stat-num">с 2015</span><span class="stat-unit">года</span></dd></div>
+          <div class="stat reveal"><dt>Проверка каждого авто</dt><dd><span class="stat-num">120+</span><span class="stat-unit">пунктов</span></dd></div>
+          <div class="stat reveal"><dt>Экспресс-диагностика</dt><dd><span class="stat-num">30</span><span class="stat-unit">минут</span></dd></div>
+        </dl>
+      </div>
+    </section>
+
+    <section class="section catalog" id="catalog">
+      <div class="container">
+        <div class="section-head reveal">
+          <h2 class="section-title">Автомобили в наличии</h2>
+          <p class="section-note">Привезены и готовы к осмотру. Юридическая чистота и диагностика уже сделаны.</p>
+        </div>
+
+        <div class="catalog-bar reveal">
+          <button class="btn-filter-toggle" id="filterToggle" aria-expanded="false" aria-controls="filterPanel">
+            Фильтры
+            <span class="filter-count" id="filterCount" hidden></span>
+          </button>
+          <div class="filter-panel" id="filterPanel">
+            <label class="filter-field">
+              <span>Марка</span>
+              <select id="fBrand"><option value="">Все марки</option></select>
+            </label>
+            <label class="filter-field">
+              <span>Кузов</span>
+              <select id="fBody">
+                <option value="">Все типы</option>
+                <option value="седан">Седан</option>
+                <option value="лифтбек">Лифтбек</option>
+                <option value="кроссовер">Кроссовер</option>
+              </select>
+            </label>
+            <label class="filter-field">
+              <span>Год от</span>
+              <select id="fYearFrom"></select>
+            </label>
+            <label class="filter-field">
+              <span>Коробка</span>
+              <select id="fGear">
+                <option value="">Любая</option>
+                <option value="Автомат">Автомат</option>
+                <option value="Робот">Робот</option>
+              </select>
+            </label>
+            <label class="filter-field">
+              <span>Привод</span>
+              <select id="fDrive">
+                <option value="">Любой</option>
+                <option value="передний">Передний</option>
+                <option value="полный">Полный</option>
+              </select>
+            </label>
+            <label class="filter-field filter-price">
+              <span>Цена до</span>
+              <select id="fPriceMax">
+                <option value="">Любая</option>
+                <option value="1500000">1,5 млн ₽</option>
+                <option value="2000000">2 млн ₽</option>
+                <option value="2500000">2,5 млн ₽</option>
+                <option value="3000000">3 млн ₽</option>
+              </select>
+            </label>
+            <button class="filter-reset" id="filterReset" type="button">Сбросить</button>
+          </div>
+          <div class="catalog-meta">
+            <span class="results-count" id="resultsCount" aria-live="polite">Найдено: 7</span>
+            <label class="sort-field">
+              <span>Сортировка</span>
+              <select id="sortSelect">
+                <option value="new">Сначала новые</option>
+                <option value="priceAsc">Дешевле</option>
+                <option value="priceDesc">Дороже</option>
+              </select>
+            </label>
+          </div>
+        </div>
+
+        <div class="car-grid" id="carGrid"></div>
+        <p class="catalog-empty" id="catalogEmpty" hidden>По заданным фильтрам ничего не найдено. Сбросьте фильтры или позвоните — привезём под заказ.</p>
+      </div>
+    </section>
+
+    <section class="section contacts" id="contacts">
+      <div class="container contacts-grid">
+        <div class="contacts-info reveal">
+          <h2 class="section-title">Контакты</h2>
+          <address class="contacts-list">
+            <div class="contact-item"><span class="contact-label">Адрес</span><span class="contact-value">г. Екатеринбург, ул. Объездная, 27, стр. 2</span></div>
+            <div class="contact-item"><span class="contact-label">Телефон</span><a class="contact-value" href="tel:+79221554015">+7 922 155-40-15</a></div>
+            <div class="contact-item"><span class="contact-label">Режим работы</span><span class="contact-value">Пн–Сб 9:00–20:00<br>Вс 10:00–18:00</span></div>
+          </address>
+          <a class="btn btn-primary" href="tel:+79221554015">Позвонить</a>
+        </div>
+        <form class="contacts-form reveal" id="callbackForm" novalidate>
+          <h3>Заказать звонок</h3>
+          <p class="form-note">Оставьте имя и телефон — перезвоним в течение 15 минут в рабочее время.</p>
+          <label class="form-field">
+            <span>Имя</span>
+            <input type="text" name="name" autocomplete="name" placeholder="Как к вам обращаться">
+          </label>
+          <label class="form-field">
+            <span>Телефон</span>
+            <input type="tel" name="phone" autocomplete="tel" inputmode="tel" placeholder="+7 ___ ___-__-__">
+          </label>
+          <button class="btn btn-primary btn-block" type="submit">Жду звонка</button>
+          <p class="form-status" id="formStatus" role="status" aria-live="polite"></p>
+        </form>
+      </div>
+    </section>
+
+  </div><!-- /view-home -->
+
+  <!-- ===================== CAR VIEW ===================== -->
+  <div id="view-car" hidden></div>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container footer-inner">
+    <span>© 2026 «Автомобилист» — автосервис и автомобили в наличии</span>
+    <a href="tel:+79221554015">+7 922 155-40-15</a>
+  </div>
+</footer>
+
+<script src="assets/js/data.js"></script>
+<script src="assets/js/app.js"></script>
+</body>
+</html>

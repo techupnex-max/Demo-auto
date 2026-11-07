@@ -110,9 +110,9 @@
         'aria-label="' + car.brand + ' ' + car.model + ' ' + car.year + ', ' + statusLabel(car) + '" ' +
         'style="--reveal-delay:' + (idx % 3) * 50 + 'ms; --badge-delay: 120ms">' +
         '<div class="car-media">' +
-          '<img class="main" src="assets/img/' + car.photos[0] + '.jpg" ' +
+          '<img class="main" src="' + car.photos[0] + '.jpg" ' +
             'alt="' + car.brand + ' ' + car.model + ' ' + car.year + ', вид спереди" loading="lazy">' +
-          '<img class="alt" src="assets/img/' + car.photos[1] + '.jpg" ' +
+          '<img class="alt" src="' + car.photos[1] + '.jpg" ' +
             'alt="' + car.brand + ' ' + car.model + ' ' + car.year + ', вид сзади" loading="lazy" aria-hidden="true">' +
           '<span class="car-badge' + (car.status === 'reserved' ? ' badge-reserved' : '') + '">' +
             '<span class="badge-dot"></span>' + statusLabel(car) +
@@ -142,7 +142,7 @@
   function wireCard(node) {
     function open() { location.hash = '#/auto/' + node.dataset.id; }
     node.addEventListener('click', function (e) {
-      if (e.target.closest('.btn-more') || e.target === node || e.target.closest('.car-media, .car-info')) open();
+      if (e.target.closest('.btn-more')  e.target === node  e.target.closest('.car-media, .car-info')) open();
     });
     node.addEventListener('keydown', function (e) {
       if (e.key === 'Enter' || e.key === ' ') { e.preventDefault(); open(); }
@@ -209,8 +209,7 @@
       emptyMsg.hidden = list.length > 0;
       animateCount(list.length);
     }
-
-    if (firstRender || !animate || reduceMotion) {
+    if (firstRender  !animate  reduceMotion) {
       buildAll();
       firstRender = false;
       return;
@@ -322,14 +321,14 @@
       .slice(0, 3);
 
     var photosHTML = car.photos.map(function (p, i) {
-      return '<img src="assets/img/' + p + '.jpg" class="' + (i === 0 ? 'active' : '') + '" ' +
+      return '<img src="' + p + '.jpg" class="' + (i === 0 ? 'active' : '') + '" ' +
         'alt="' + car.brand + ' ' + car.model + ' ' + car.year + ', ' +
         (i === 0 ? 'вид спереди' : 'вид сзади') + '">';
     }).join('');
     var thumbsHTML = car.photos.map(function (p, i) {
       return '<button type="button" class="' + (i === 0 ? 'active' : '') + '" data-idx="' + i + '" ' +
         'aria-label="Показать фото ' + (i + 1) + '">' +
-        '<img src="assets/img/' + p + '.jpg" alt="Миниатюра: ' + car.brand + ' ' + car.model + ', ракурс ' + (i + 1) + '">' +
+        '<img src="' + p + '.jpg" alt="Миниатюра: ' + car.brand + ' ' + car.model + ', ракурс ' + (i + 1) + '">' +
       '</button>';
     }).join('');
 
@@ -424,12 +423,8 @@
   }
   window.addEventListener('hashchange', route);
 
-  // Кнопка «назад» ведёт в каталог — при открытии карточки из другой карточки
-  // хэш меняется, маршрут перерисовывается штатно.
-
   /* ================= Форма обратного звонка ================= */
-
-  var form = document.getElementById('callbackForm');
+ var form = document.getElementById('callbackForm');
   var formStatus = document.getElementById('formStatus');
   form.addEventListener('submit', function (e) {
     e.preventDefault();
